@@ -151,21 +151,187 @@
 <script>
 const Q = [
   {
-    id: "q1",
-    text: "Calculate the molality of a solution containing \\(5\\,g\\) NaOH (\\(M = 40\\,g/mol\\)) dissolved in \\(200\\,g\\) of water.",
-    options: ["\\(0.5\\,m\\)", "\\(0.625\\,m\\)", "\\(0.75\\,m\\)", "\\(1.0\\,m\\)"],
-    correct: "B",
-    solution: "\\(m = \\tfrac{5/40}{0.2} = 0.625\\,m\\)"
+    "id": "q1",
+    "text": "What is meant by a point object in physics?",
+    "options": [
+      "An object with zero dimensions",
+      "An object whose size is negligible compared to the distance it travels",
+      "An object that has no mass",
+      "An object that cannot move"
+    ],
+    "correct": "B",
+    "solution": "When the dimensions of an object are negligible compared to the distance travelled, the object is treated as a point object."
   },
-  
   {
-    id: "q10",
-    text: "Calculate the molality of a solution prepared by dissolving \\(10\\,g\\) of KOH (\\(M = 56\\,g/mol\\)) in \\(250\\,g\\) of water.",
-    options: ["\\(0.2\\,m\\)", "\\(0.25\\,m\\)", "\\(0.3\\,m\\)", "\\(0.5\\,m\\)"],
-    correct: "B",
-    solution: "\\(m = \\tfrac{10/56}{0.25} = 0.25\\,m\\)"
+    "id": "q2",
+    "text": "Which of the following is the best example of a point mass?",
+    "options": [
+      "A car moving in a parking lot",
+      "Earth revolving around the Sun",
+      "A bus moving inside a garage",
+      "A train inside a station"
+    ],
+    "correct": "B",
+    "solution": "Earth is treated as a point mass while revolving around the Sun because the distance is very large compared to Earth's size."
+  },
+  {
+    "id": "q3",
+    "text": "Distance travelled by a particle is:",
+    "options": [
+      "A vector quantity",
+      "Always greater than or equal to displacement",
+      "Always less than displacement",
+      "Always equal to displacement"
+    ],
+    "correct": "B",
+    "solution": "Distance is the actual path length and is always greater than or equal to the magnitude of displacement."
+  },
+  {
+    "id": "q4",
+    "text": "Displacement of a particle is:",
+    "options": [
+      "A scalar quantity",
+      "Always greater than distance",
+      "The shortest path between initial and final positions",
+      "Independent of initial and final positions"
+    ],
+    "correct": "C",
+    "solution": "Displacement is defined as the shortest path (straight line) between initial and final positions of the particle."
+  },
+  {
+    "id": "q5",
+    "text": "A body goes around a circular track and returns to the starting point. What is its displacement?",
+    "options": [
+      "Equal to distance",
+      "Zero",
+      "Greater than distance",
+      "Cannot be determined"
+    ],
+    "correct": "B",
+    "solution": "Since the initial and final positions are the same, displacement = 0, even though distance is not zero."
+  },
+  {
+    "id": "q6",
+    "text": "A car moves 3 km east and then 4 km north. What is its displacement?",
+    "options": [
+      "7 km",
+      "5 km",
+      "1 km",
+      "12 km"
+    ],
+    "correct": "B",
+    "solution": "Displacement = \\(\\sqrt{3^2 + 4^2} = 5 \\text{ km}\\)."
+  },
+  {
+    "id": "q7",
+    "text": "Which is always non-negative?",
+    "options": [
+      "Displacement",
+      "Distance",
+      "Velocity",
+      "Acceleration"
+    ],
+    "correct": "B",
+    "solution": "Distance is always positive or zero, but displacement can be positive, negative, or zero."
+  },
+  {
+    "id": "q8",
+    "text": "Can distance ever be less than displacement?",
+    "options": [
+      "Yes",
+      "No",
+      "Sometimes",
+      "Only in circular motion"
+    ],
+    "correct": "B",
+    "solution": "Distance can never be less than displacement; it is always greater or equal."
+  },
+  {
+    "id": "q9",
+    "text": "A runner moves 100 m east and then 60 m west. What is the distance covered and displacement?",
+    "options": [
+      "Distance = 160 m, Displacement = 40 m east",
+      "Distance = 160 m, Displacement = 40 m west",
+      "Distance = 40 m, Displacement = 160 m",
+      "Distance = 60 m, Displacement = 100 m"
+    ],
+    "correct": "A",
+    "solution": "Distance = 100 + 60 = 160 m, Displacement = 100 – 60 = 40 m east."
+  },
+  {
+    "id": "q10",
+    "text": "When can the magnitude of displacement equal distance?",
+    "options": [
+      "Only in circular motion",
+      "When motion is along a straight line in one direction",
+      "When motion is zigzag",
+      "Never"
+    ],
+    "correct": "B",
+    "solution": "If an object moves in a straight line without changing direction, then distance = displacement."
+  },
+  {
+    "id": "q11",
+    "text": "Which of the following is a scalar quantity?",
+    "options": [
+      "Displacement",
+      "Velocity",
+      "Distance",
+      "Force"
+    ],
+    "correct": "C",
+    "solution": "Distance has only magnitude, not direction, so it is a scalar."
+  },
+  {
+    "id": "q12",
+    "text": "Which of the following is a vector quantity?",
+    "options": [
+      "Distance",
+      "Displacement",
+      "Speed",
+      "Mass"
+    ],
+    "correct": "B",
+    "solution": "Displacement has both magnitude and direction, so it is a vector."
+  },
+  {
+    "id": "q13",
+    "text": "If a particle returns to its starting point after motion, then:",
+    "options": [
+      "Distance = 0, Displacement = 0",
+      "Distance ≠ 0, Displacement = 0",
+      "Distance = 0, Displacement ≠ 0",
+      "Distance ≠ 0, Displacement ≠ 0"
+    ],
+    "correct": "B",
+    "solution": "Distance covered is non-zero, but displacement = 0 since initial and final positions are the same."
+  },
+  {
+    "id": "q14",
+    "text": "If the displacement of a particle is zero, what can we say about the distance?",
+    "options": [
+      "It must be zero",
+      "It may or may not be zero",
+      "It is always negative",
+      "It cannot be measured"
+    ],
+    "correct": "B",
+    "solution": "Distance may be zero (if no motion) or non-zero (if the particle returns to its initial position)."
+  },
+  {
+    "id": "q15",
+    "text": "The actual length of the path travelled by a particle is called:",
+    "options": [
+      "Displacement",
+      "Velocity",
+      "Distance",
+      "Speed"
+    ],
+    "correct": "C",
+    "solution": "Distance is defined as the actual length of the path travelled by a particle, irrespective of direction."
   }
-];
+]
+;
 
 
 
@@ -410,3 +576,4 @@ sendReport.onclick = () => {
 
 </body>
 </html>
+
